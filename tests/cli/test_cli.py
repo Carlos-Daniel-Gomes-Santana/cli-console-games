@@ -1,7 +1,14 @@
-from src.cli import hello
+"""
+    Author: Carlos Daniel Gomes Santana
+    Description: Unit Tests for commands of CLI
+"""
 from click.testing import CliRunner
 
-def test_hello():
+from src.cli import hello
+
+
+def test_hello_command():
+    """Unit Test for hello command of CLI"""
     runner = CliRunner()
     result = runner.invoke(hello)
     assert result.exit_code == 0

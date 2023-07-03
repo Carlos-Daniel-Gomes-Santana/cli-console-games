@@ -1,13 +1,18 @@
+"""
+    Author: Carlos Daniel Gomes Santana
+    Description: A CLI to execute the games
+"""
 import click
 
 
 @click.group()
-def app(): ...
+def app():
+    """Group to CLI commands"""
 
 
 @app.command()
 def hello():
-    """say a hello world"""
+    """Say a hello world"""
     click.echo("Hello World")
 
 
